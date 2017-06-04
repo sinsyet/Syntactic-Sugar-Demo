@@ -18,8 +18,8 @@ public class Server {
 		new Thread(udpServer).start();
 		new Thread(tcpServer).start();
 		
-		while(true){}
 	}
+	
 	static boolean udpServerFlag;
 	static Runnable udpServer = new Runnable() {
 		
@@ -69,7 +69,6 @@ public class Server {
 					rebackClient(socket);
 				}
 			} catch (IOException e) {
-				
 			}
 		}
 
