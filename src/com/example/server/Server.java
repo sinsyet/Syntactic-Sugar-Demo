@@ -47,7 +47,7 @@ public class Server {
 			int length = packet.getLength();
 			
 			String receiveMsg = new String(data,offset,length);
-			String rebackMsg = "server aleardy received client udp msg: "+receiveMsg;
+			String rebackMsg = "server already received client udp msg: "+receiveMsg;
 			System.out.println(rebackMsg);
 			
 			byte[] buffer = rebackMsg.getBytes();
@@ -86,7 +86,7 @@ public class Server {
 			}
 			
 			String receiveMsg = new String(buffer,0,len);
-			String rebackMsg = "server aleardy receive client tcp msg: " + receiveMsg;
+			String rebackMsg = "server already receive client tcp msg: " + receiveMsg;
 			System.out.println(rebackMsg);
 			
 			OutputStream os = socket.getOutputStream();
